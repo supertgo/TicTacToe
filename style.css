@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 25vh;
+}
+
+h1 {
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+}
+
+#container {
+
+    position: relative;
+    width: max-content;
+    background-color: rgb(80, 78, 78);
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    grid-gap: 5px;
+    
+    
+   
+}
+
+.gameButtons {
+    font-size: 3em;
+    font-weight: bolder;
+    background-color: white;
+    text-shadow: 2px 2px #9b9797;
+
+}
+
+#choiceBtns {
+
+    box-sizing: inherit;
+    display: flex;
+    margin-top: 10%;
+    text-align: center;
+    justify-content:space-evenly;
+    
+}
