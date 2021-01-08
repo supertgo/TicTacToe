@@ -389,7 +389,8 @@ const gameBoard = (() => {
             container.style.display = 'grid';
 
             restartBtn.style.display = 'inline';
-
+            DOM.scrName1.innerText += ' Human';
+            DOM.scrName2.innerText += ' Ai Bot';
             const player1 = player('player', 'X', 'player1');
             const AI = player('AI BOT', 'O', 'player2');
             
