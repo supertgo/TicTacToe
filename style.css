@@ -1,7 +1,8 @@
 body {
     width: 100%;
-    background-color: black;
+    background-color: rgb(217 211 230);
     overflow-x: hidden;
+    
 }
 
 main{
@@ -9,44 +10,263 @@ main{
     display: flex;
     justify-content: center;
     top: 25vh;
+    transition: all 1.5s ease 0s;
 }
 
 h1 {
+    
+    position: relative;
     color: whitesmoke;
     justify-content: center;
     text-align: center;
+    text-shadow: 5px 5px #31097a;
+    font-size: 5em;
+    transition: all 1.5s ease 0s;
+    animation: flutuando .4s ease-in-out 1s infinite alternate;
+}
+
+h2{
+    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4em;
+    color: #31097a;
+    text-shadow: 3px 3px whitesmoke;
+    transition: all 1.5s ease 0s;
+    animation: flutuando .4s ease-in-out 1s infinite alternate;
+    
+    
+}
+
+@keyframes flutuando {
+    from { top: 0;}
+
+    to { top: -5px}
 }
 
 #container {
 
     position: relative;
     width: max-content;
-    background-color: rgb(80, 78, 78);
+    background-color: rgb(150, 111, 243);
     justify-content: center;
     text-align: center;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 70px);
     grid-template-rows: repeat(3, 70px);
     grid-gap: 5px;
     
-    
-   
 }
 
 .gameButtons {
+
     font-size: 3em;
     font-weight: bolder;
     background-color: white;
     text-shadow: 2px 2px #9b9797;
-
+    
+    
 }
 
 #choiceBtns {
-
-    box-sizing: inherit;
-    display: flex;
-    margin-top: 10%;
-    text-align: center;
-    justify-content:space-evenly;
     
+    display: grid;    
+    margin-top: 10%;     
+    text-align: center;    
+    justify-content:center;     
+    grid-gap: 15px;
+    
+    
+}
+#players {
+    font-size: 1.5em;
+    color: whitesmoke;
+    font-weight: bolder;
+    color: rgb(150, 111, 243);
+    display: none;
+    align-items: center;
+     
+    
+}
+#player1 {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    
+}
+
+#player2{
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    
+}
+
+.score {
+    position: relative;
+    left: 20%;
+    
+}
+
+#pp{
+    cursor: pointer;
+    background-color: blue;
+    width: 120px;
+    height: 30px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+   
+}
+
+#pp:hover{
+
+    background-color: white;
+    color: blue;
+    transition: all 0.5s ease 0s;
+}
+
+#ai {
+    cursor: pointer;
+    background-color: brown;
+    width: 120px;
+    height: 30px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+
+#ai:hover {
+    background-color: white;
+    color: brown;
+    transition: all 0.5s ease 0s;
+}
+
+
+#popUp {
+    
+    position: absolute;
+    z-index: 1000;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+    display: none;
+    box-sizing: inherit;
+    transition: 0.5s ease;
+}
+
+input[type="text"]{
+    
+    border: none;
+    margin: 10px;
+    outline: none;
+    padding: 8px;
+    
+}
+
+#submit{
+    cursor: pointer;
+    padding: 8px;
+    width: max-content;
+    color: white;
+    background-color: blue;
+    font-weight: bolder;
+    border: none;
+
+}
+
+#restartBtn{
+
+    position: absolute;
+    top: 90%;
+    width: 120px;
+    height: 30px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(150, 111, 243);
+    font-weight: bolder;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+#imgRestart {
+    width: 15px;
+    right: 50px;
+    
+   
+}
+
+#imgRestart:hover{
+    transition: 0.1s ease;
+    transform: rotate(90deg);
+}
+section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    backdrop-filter: blur(3px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: all .5s
+}
+#winnerCard{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    min-width: 100px;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,.16), 0 0 15px rgba(0,0,0,.23);
+    position: relative; 
+}
+
+#imgTrophy{
+    width: 50px;
+}
+
+#footer{
+    position:absolute;
+    bottom: 0%;
+    left: 90%;
+    font-family: 'Cedarville Cursive', cursive;
+    
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: black;
+}
+
+#reloadBtn{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    cursor: pointer;
+    padding: 8px;
+    width: max-content;
+    color: white;
+    background-color: blue;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+
 }

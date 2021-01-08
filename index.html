@@ -5,18 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
         <title>Super Tgo | Tic Tac Toe</title>
     </head>
 
     <body>
         <h1>Tic Tac Toe</h1>
+        <h2>Play With:</h2>
         <div id="choiceBtns">
-            <input type="button" value="Two players" id="pp">
+            <input type="button" value="Two players" id="pp" >
             <input type="button" value="AI Player" id="ai">
         </div>
 
+       <button id="reloadBtn">Go Back</button>
         <main>
-            
             <div id="container">
                 <input type="button" class="gameButtons" id="1" value="">
                 <input type="button" class="gameButtons" id="2" value="">
@@ -27,8 +30,42 @@
                 <input type="button" class="gameButtons" id="7" value="">
                 <input type="button" class="gameButtons" id="8" value="">
                 <input type="button" class="gameButtons" id="9" value="">
+
             </div>
         </main>
+
+         <div id="popUp">
+            <form>
+                <label for="popUpP1">Player1</label>
+                <input type="text" name="" id="popUpP1" required placeholder="Enter Name" autocomplete="off">
+                <br>
+                <label for="popUpP2">Player2</label>
+                <input type="text" name="" id="popUpP2" required placeholder="Enter Name" autocomplete="off" >
+                <br>
+                <input type="button" value="submit" id="submit">
+            </form>
+        </div>
+
+        <section>
+            <div id="winnerCard">
+                <h3 id="winner"></h3>
+                <img src="images/trophy.png" alt="" id="imgTrophy">
+            </div>
+        </section>
+
+        <button id="restartBtn"> Restart <img src="https://img.icons8.com/metro/26/000000/restart.png" id="imgRestart"/> </button>
+        <div id="players">
+            <div id="player1">
+                <p id="scoreNameP1">Player:</p>
+                <p id="scoreP1">Score:</p>
+            </div>
+            <div id="player2">
+              <p id="scoreNameP2">Player:</p>
+              <p id="scoreP2">Score:</p>
+            </div>
+        </div>
+
+       <div id = "footer"><a href="https://github.com/supertgo/TicTacToe" target="_blank"><p>SuperTgo</p></a></div>
 
         <script type="text/javascript" src="script.js"></script>
     </body>
