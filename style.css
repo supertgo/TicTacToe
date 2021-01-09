@@ -268,5 +268,6 @@ a:-webkit-any-link {
     font-weight: bolder;
     border: none;
     border-radius: 10px;
+    display: none;
 
 }
