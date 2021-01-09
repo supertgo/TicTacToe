@@ -364,12 +364,14 @@ const gameBoard = (() => {
            
             DOM.game(DOM.h1El, DOM.h2El);
 
-
+            DOM.reloadBtn.style.display = 'inline';
             popUp.style.display = 'inline';
             divGame.style.display = 'none';
             
 
             submit.addEventListener('click', () => {
+
+                
                 divPlayers.style.display = 'inline';
                 container.style.display = 'grid';
                 popUp.style.display = 'none';
@@ -384,6 +386,8 @@ const gameBoard = (() => {
 
             DOM.game(DOM.h1El, DOM.h2El);
 
+
+            DOM.reloadBtn.style.display = 'inline';
             divPlayers.style.display = 'inline';
             divGame.style.display = 'none';
             container.style.display = 'grid';
