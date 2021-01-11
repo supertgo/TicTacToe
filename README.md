@@ -8,3 +8,5 @@ I`ve learn a lot of things:
     3 - Create a fake opacity with section.
     4 - I discovered the setTimeOut function
     5 - I discovered how tho reload the page.
+    
+Live demo: https://supertgo.github.io/TicTacToe/
