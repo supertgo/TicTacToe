@@ -1,12 +1,22 @@
+### TicTacToe
+
 The goal of the lesson is to create a AI impossible to win
 in TicTacToe.
 
-I`ve learn a lot of things: 
+Live demo  👉 : https://supertgo.github.io/TicTacToe/
 
-    1 - Create a web page with no global variables.
-    2 - Create a AI using the minimax method.
-    3 - Create a fake opacity with section.
-    4 - I discovered the setTimeOut function
-    5 - I discovered how tho reload the page.
+<p align="center">
+  <img src="/demo/tic-tac-toe.gif" />
+</p>
+
+
+
+## O que eu eu aprendi 
+
+<li> Create a web page with no global variables. </li>
+<li> Create a AI using the minimax method. </li>
+<li> Create a fake opacity with section. </li>
+<li> I discovered the setTimeOut function. </li>
+<li> I discovered how tho reload the page. </li>
     
-Live demo: https://supertgo.github.io/TicTacToe/
+
