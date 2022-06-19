@@ -1,7 +1,6 @@
 ### TicTacToe
 
-The goal of the lesson is to create a AI impossible to win
-in TicTacToe.
+The goal of the lesson is to create a AI impossible to win in TicTacToe.
 
 Live demo  👉 : https://supertgo.github.io/TicTacToe/
 
